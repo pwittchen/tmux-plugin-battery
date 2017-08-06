@@ -30,3 +30,4 @@ References
 - https://github.com/tmux-plugins
 - https://github.com/tmux-plugins/tmux-example-plugin
 - https://github.com/tmux-plugins/tmux-battery
+- https://github.com/pwittchen/dotfiles
