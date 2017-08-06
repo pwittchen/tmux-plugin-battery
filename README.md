@@ -2,6 +2,8 @@ tmux-plugin-battery
 ===================
 tmux plugin showing battery level
 
+There's already another plugin for the same thing called [tmux-battery](https://github.com/tmux-plugins/tmux-battery), but this one is just simpler and adjusted to my needs.
+
 Installation
 ------------
 ### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
