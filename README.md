@@ -16,6 +16,15 @@ Hit `prefix + I` to fetch the plugin and source it.
 
 If format strings are added to `status-right`, they should now be visible.
 
+Usage
+-----
+
+In order to see battery level via this tmux plugin, add the following command to your `.tmux.conf` file:
+
+```
+#{battery_level}
+```
+
 References
 ----------
 - https://github.com/tmux-plugins
