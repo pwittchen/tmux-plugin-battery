@@ -1,6 +1,6 @@
 tmux-plugin-battery
 ===================
-tmux plugin showing battery level (works on Linux and macOS)
+tmux plugin showing battery level
 
 Installation
 ------------
