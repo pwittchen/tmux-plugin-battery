@@ -19,5 +19,5 @@ If format strings are added to `status-right`, they should now be visible.
 References
 ----------
 - https://github.com/tmux-plugins
-- Exemplary plugin: https://github.com/tmux-plugins/tmux-example-plugin
-- Battery plugin: https://github.com/tmux-plugins/tmux-battery
+- https://github.com/tmux-plugins/tmux-example-plugin
+- https://github.com/tmux-plugins/tmux-battery
