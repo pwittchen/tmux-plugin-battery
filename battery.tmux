@@ -15,9 +15,8 @@ set_tmux_option() {
 
 do_interpolation() {
 	local string=$1
-	local percentage_interpolated=${string/$battery_level_interpolation/$battery_level}
-	local all_interpolated=$percentage_interpolated
-	echo $all_interpolated
+	local battery_level_interpolated=${string/$battery_level_interpolation/$battery_level}
+	echo $battery_level_interpolated
 }
 
 update_tmux_option() {
@@ -31,5 +30,4 @@ main() {
 	update_tmux_option "status-right"
 	update_tmux_option "status-left"
 }
-
 main
