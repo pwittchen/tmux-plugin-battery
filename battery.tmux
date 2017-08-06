@@ -4,12 +4,8 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source "$CURRENT_DIR/scripts/helpers.sh"
 
-battery_plugin_interpolation=(
-	"\#{battery_level}"
-)
-plugin_commands=(
-	"#($CURRENT_DIR/scripts/battery_level.sh)"
-)
+battery_level="#($CURRENT_DIR/scripts/battery_level.sh)"
+battery_level_interpolation="\#{battery_level}"
 
 set_tmux_option() {
 	local option="$1"
@@ -18,11 +14,10 @@ set_tmux_option() {
 }
 
 do_interpolation() {
-	local all_interpolated="$1"
-	for ((i=0; i<${#battery_plugin_commands[@]}; i++)); do
-		all_interpolated=${all_interpolated/${battery_plugin_interpolation[$i]}/${battery_plugin_commands[$i]}}
-	done
-	echo "$all_interpolated"
+	local string=$1
+	local percentage_interpolated=${string/$battery_level_interpolation/$battery_level}
+	local all_interpolated=$percentage_interpolated
+	echo $all_interpolated
 }
 
 update_tmux_option() {
