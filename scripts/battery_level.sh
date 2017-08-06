@@ -18,5 +18,4 @@ print_battery_level() {
 main() {
   print_battery_level
 }
-
 main
